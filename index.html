@@ -5,74 +5,157 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Rotelli - Currículo</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f4f4f4;
-      color: #333;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 {
-      color: #2c3e50;
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    header {
       text-align: center;
+      padding: 30px;
+      background: #2c3e50;
+      color: white;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 5px;
+    }
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    .section {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     }
     h2 {
       color: #3498db;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 5px;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      position: relative;
     }
-    .section {
-      margin: 20px 0;
-      padding: 15px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    h2::after {
+      content: '';
+      width: 50px;
+      height: 3px;
+      background: #3498db;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    ul li {
+      background: #ecf0f1;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      color: #2c3e50;
+      transition: background 0.3s ease;
+    }
+    ul li:hover {
+      background: #3498db;
+      color: white;
     }
     a {
       color: #e74c3c;
       text-decoration: none;
+      font-weight: bold;
     }
     a:hover {
+      color: #c0392b;
       text-decoration: underline;
+    }
+    .experience, .education {
+      margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 10px;
+      }
+      header h1 {
+        font-size: 1.8em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Lucas Rotelli Raulino - Desenvolvedor & Jornalista</h1>
-  
-  <div class="section">
-    <h2>Sobre Mim</h2>
-    <p>Jornalista e estudante de Análise e Desenvolvimento de Sistemas. Desenvolvo soluções web com HTML, CSS e JavaScript, além de atuar com análise de dados e projetos digitais. Experiência em SEO, WordPress, otimização de sites e monetização.</p>
-  </div>
-  
-  <div class="section">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>HTML5, CSS3, JavaScript</li>
-      <li>SEO com IA</li>
-      <li>WordPress</li>
-      <li>Análise de Dados</li>
-    </ul>
-  </div>
-  
-  <div class="section">
-    <h2>Experiência</h2>
-    <p><strong>Programador Web & Jornalista</strong> - Portal de Pinhal<br>
-    Julho 2017 - Presente (7 anos e 9 meses)<br>
-    Espírito Santo do Pinhal, SP<br>
-    Desenvolvimento web, SEO, otimização de sites e monetização.</p>
-  </div>
-  
-  <div class="section">
-    <h2>Formação</h2>
-    <p><strong>Análise e Desenvolvimento de Sistemas</strong> - Unyleya<br>
-    Janeiro 2025 - Julho 2027 (Em andamento)</p>
-    <p><strong>Certificações:</strong> Fundamentos de WordPress, SEO with AI</p>
-  </div>
-  
-  <div class="section">
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:lucasrotelli92@gmail.com">lucasrotelli92@gmail.com</a><br>
-    LinkedIn: <a href="https://www.linkedin.com/in/lucasrotelliraulino" target="_blank">lucasrotelliraulino</a></p>
+  <div class="container">
+    <header>
+      <h1>Lucas Rotelli Raulino</h1>
+      <p>Jornalista | Desenvolvedor Web | Estudante de Análise e Desenvolvimento de Sistemas</p>
+    </header>
+
+    <div class="section">
+      <h2>Sobre Mim</h2>
+      <p>Jornalista e estudante de Análise e Desenvolvimento de Sistemas. Desenvolvo soluções web com HTML, CSS e JavaScript, além de atuar com análise de dados e projetos digitais. Experiência em SEO, WordPress, otimização de sites e monetização. Apaixonado por tecnologia e resultados de alta performance.</p>
+    </div>
+
+    <div class="section">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>SEO com IA</li>
+        <li>WordPress</li>
+        <li>Análise de Dados</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Experiência</h2>
+      <div class="experience">
+        <p><strong>Programador Web & Jornalista</strong> - Portal de Pinhal<br>
+        Julho 2017 - Presente (7 anos e 9 meses)<br>
+        Espírito Santo do Pinhal, SP<br>
+        Desenvolvimento web, SEO, otimização de sites e monetização.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Formação</h2>
+      <div class="education">
+        <p><strong>Análise e Desenvolvimento de Sistemas</strong> - Unyleya<br>
+        Janeiro 2025 - Julho 2027 (Em andamento)</p>
+        <p><strong>Certificações:</strong> Fundamentos de WordPress, SEO with AI</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:lucasrotelli92@gmail.com">lucasrotelli92@gmail.com</a><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/lucasrotelliraulino" target="_blank">lucasrotelliraulino</a></p>
+    </div>
   </div>
 </body>
 </html>
