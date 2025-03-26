@@ -35,6 +35,3 @@ Lista projetos realizados (adapte com exemplos reais).
 Envia uma mensagem para o desenvolvedor.  
 **Body**:  
 `{ "email": "lucasrotelli92@gmail.com", "linkedin": "https://www.linkedin.com/in/lucasrotelliraulino" }`
-
-### Versão Web
-[Acesse meu currículo online aqui](https://rotellicode.github.io/lucas-rotelli-raulino-cv/)
