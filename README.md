@@ -29,7 +29,7 @@ Retorna formação acadêmica e certificações.
 ### GET /projetos
 Lista projetos realizados (adapte com exemplos reais).  
 **Resposta**:  
-`{ "projetos": ["Desenvolvimento do Portal de Pinhal (HTML/CSS/JS)", "Otimização SEO para sites locais"], "links": "https://github.com/lucasrotelli92" }`
+`{ "projetos": ["Otimização e tradução do tema do Portal de Pinhal (WordPress)", "Otimização SEO para sites locais"], "link": "https://portaldepinhal.com.br" }`
 
 ### POST /contato
 Envia uma mensagem para o desenvolvedor.  
